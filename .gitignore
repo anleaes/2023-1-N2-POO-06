@@ -1,3 +1,5 @@
-/prontuarioapp/__pycache__
-/prontuarioapp/apps/sistema/__pycache__/*
-/prontuarioapp/apps/sistema/migrations/*
+/__pycache__/*
+/apps/sistema/__pycache__/*
+/apps/sistema/migrations/*
+/apps/sistema/migrations/*
+/prontuarioapp/__pycache__/*
