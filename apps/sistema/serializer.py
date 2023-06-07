@@ -1,7 +1,7 @@
-from .models import system
+from .models import sistema
 from rest_framework import serializers
 
-class SystemSerializer(serializers.ModelSerializer):
+class SistemaSerializer(serializers.ModelSerializer):
     class Meta:
         model = sistema
         fields = '__all__'

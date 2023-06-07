@@ -5,7 +5,7 @@ from rest_framework import routers
 app_name = 'sistema'
 
 router = routers.DefaultRouter()
-router.register('sistema', views.SystemViewSet, basename='sistema')
+router.register('sistema', views.SistemaViewSet, basename='sistema')
 
 urlpatterns = [
     path('', include(router.urls) )
