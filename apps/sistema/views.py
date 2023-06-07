@@ -1,12 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
-from .models import sistema
+from .models import System
 from rest_framework import viewsets
-from .serializer import sistemaSerializer
+from .serializer import SystemSerializer
 
-# Após o comentario "# Create your views here." e crie as views "sistema".
 
-class sistemaViewSet(viewsets.ModelViewSet):
-    queryset = sistema.objects.all()
-    serializer_class = sistemaSerializer  
+# Create your views here.
+
+class SystemViewSet(viewsets.ModelViewSet):
+    queryset = System.objects.all()
+    serializer_class = SystemSerializer
