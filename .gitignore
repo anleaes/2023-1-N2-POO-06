@@ -3,3 +3,4 @@
 /apps/sistema/migrations/*
 /apps/sistema/migrations/*
 /prontuarioapp/__pycache__/*
+/.vscode/*
