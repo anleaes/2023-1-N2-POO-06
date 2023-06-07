@@ -1,9 +1,9 @@
-from .models import sistema
+from .models import Sistema
 from rest_framework import serializers
 
 class SistemaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = sistema
+        model = Sistema
         fields = '__all__'
 
         # Para chamar todos os atributos:
