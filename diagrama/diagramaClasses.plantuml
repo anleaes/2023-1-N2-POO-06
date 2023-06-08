@@ -2,7 +2,7 @@
 
 class Paciente {
   - nome: string
-  - cpf: int
+  - cpf: char
   - data_nascimento: date
   - sexo: string
   - endereço: string
