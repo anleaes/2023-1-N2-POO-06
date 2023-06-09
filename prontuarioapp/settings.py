@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'paciente.apps.PacienteConfig',
-    'sistema.apps.SistemaConfig'
+    'sistema.apps.SistemaConfig',
+    'prontuario.apps.ProntuarioConfig',
+    'medico.apps.MedicoConfig',
+    'medicamento.apps.MedicamentoConfig',
+    'prescricao.apps.PrescricaoConfig',
+    'farmacia.apps.FarmaciaConfig'
+    
 ]
 
 MIDDLEWARE = [
