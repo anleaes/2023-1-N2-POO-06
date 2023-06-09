@@ -43,7 +43,12 @@ INSTALLED_APPS = [
     'rest_framework',
     'sistema.apps.SistemaConfig'
     'paciente.apps.PacienteConfig',
-    'medico.apps.SistemaConfig',
+    'sistema.apps.SistemaConfig',
+    'medico.apps.MedicoConfig',
+    # 'prontuario.apps.ProntuarioConfig',
+    # 'medicamento.apps.MedicamentoConfig',
+    # 'prescricao.apps.PrescricaoConfig',
+    # 'farmacia.apps.FarmaciaConfig'
 ]
 
 MIDDLEWARE = [
