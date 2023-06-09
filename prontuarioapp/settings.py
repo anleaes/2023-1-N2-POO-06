@@ -43,11 +43,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'paciente.apps.PacienteConfig',
     'sistema.apps.SistemaConfig',
-    'prontuario.apps.ProntuarioConfig',
-    'medico.apps.MedicoConfig',
-    'medicamento.apps.MedicamentoConfig',
-    'prescricao.apps.PrescricaoConfig',
-    'farmacia.apps.FarmaciaConfig'
+    # 'prontuario.apps.ProntuarioConfig',
+    # 'medico.apps.MedicoConfig',
+    # 'medicamento.apps.MedicamentoConfig',
+    # 'prescricao.apps.PrescricaoConfig',
+    # 'farmacia.apps.FarmaciaConfig'
     
 ]
 
