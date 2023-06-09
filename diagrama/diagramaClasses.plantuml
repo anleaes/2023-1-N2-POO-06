@@ -1,0 +1,72 @@
+@startuml prontuarioapp
+
+class Paciente {
+  - nome: string
+  - cpf: char
+  - data_nascimento: date
+  - sexo: string
+  - endereço: string
+  - historico: string
+  + construtor(nome, cpf, iddata_nascimentoa, sexo, endereco, historico)
+}
+
+class Medico {
+  - id: int
+  - nome: string
+  - especialidade: string
+  - paciente: Paciente
+  + construtor(id, nome, especialidade, paciente)
+}
+
+class Medicamento {
+  - nome: string
+  - numero_lote: int
+  - validade: date
+  + construtor(nome, numero_lote, validade)
+}
+
+
+class Prescricao {
+  - medicamento: Medicamento
+  - dosagem: string
+  - frequencia: string
+  - tratamento: string
+  + construtor(medicamentos, dosagem, frequencia, tratamento)
+}
+
+class Prontuario {
+  - paciente: Paciente
+  - data_criacao: date
+  - sintomas: string
+  - diagnostico: string
+  - prescricao: Prescricao
+  + construtor(paciente, data_criacao, sintomas, diagnostico, prescricao)
+}
+
+
+class Farmacia {
+  - estoque: string
+  - medicamento: Medicamento
+  - lotes: string
+  + construtor(estoque, medicamento, lotes)
+}
+
+
+class Sistema {
+  - paciente: Paciente
+  - medico: Medico
+  - prontuario: Prontuario
+  + construtor(paciente, medico, prontuario)
+}
+
+
+Paciente <--> Prontuario
+Medico <--> Prontuario
+Prontuario <-- Prescricao
+Prescricao <-- Medicamento
+Farmacia --> Medicamento
+Sistema <-- Paciente
+Sistema <-- Medico
+Sistema <-- Prontuario
+
+@enduml
