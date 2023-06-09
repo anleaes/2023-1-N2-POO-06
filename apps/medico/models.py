@@ -16,4 +16,4 @@ class Medico(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return self
+        return self.nome
