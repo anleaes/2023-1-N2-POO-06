@@ -11,7 +11,7 @@ class Paciente(models.Model):
     SEXO_CHOICES = (
         ('M', 'Masculino'),
         ('F', 'Feminino'),
-        ('O', 'Outroa'),
+        ('O', 'Outros'),
     )
     sexo = models.CharField('Sexo', max_length=1, choices=SEXO_CHOICES)
 
