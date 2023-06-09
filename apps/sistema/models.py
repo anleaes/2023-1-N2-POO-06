@@ -1,18 +1,16 @@
 from django.db import models
-
-# Create your models here.
-from django.db import models
-
-# Create your models here.
+from paciente.models import Paciente
 
 class Sistema(models.Model):
-    name = models.CharField('Nome', max_length=50)
-    description = models.TextField('Descricao', max_length=100)
-
+    paciente = models.CharField(max_length=100)
+    medico = models.CharField(max_length=100)
+    prontuario = models.TextField()
+ 
     class Meta:
-        verbose_name = 'sistema'
-        verbose_name_plural = 'sistema'
-        ordering =['id']
+        verbose_name = 'Sistema'
+        verbose_name_plural = 'Sistemas'
+        ordering = ['id']
 
     def __str__(self):
-        return self.name
+        return f"{self.paciente},{self.medico},{self.prontuario}"
+
