@@ -9,8 +9,8 @@ class Medico(models.Model):
     paciente = models.ForeignKey(Paciente, verbose_name='Paciente', on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name = 'Médico'
-        verbose_name_plural = 'Médicos'
+        verbose_name = 'Medico'
+        verbose_name_plural = 'Medicos'
         ordering = ['id']
 
     def __str__(self):

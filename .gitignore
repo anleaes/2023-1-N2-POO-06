@@ -1,10 +1,10 @@
 /__pycache__/*
+/.vscode/*
 /prontuarioapp/__pycache__/*
 /apps/sistema/__pycache__/*
 /apps/sistema/migrations/*
 /apps/paciente/__pycache__/*
 /apps/paciente/migrations/*
-/.vscode/*
 /apps/farmacia/__pycache__/*
 /apps/farmacia/migrations/*
 /apps/medico/__pycache__/*
