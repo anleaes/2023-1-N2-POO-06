@@ -4,8 +4,7 @@ from django.db import models
 
 class Paciente(models.Model):
     name = models.CharField('Nome', max_length=50)
-    cpf = models.CharField('CPF', max_length=11, validators=[RegexValidator(r'^\d{11}$', 'CPF inválido.')])
-    data_nascimento = models.DateField('Data de Nascimento')
+    cpf = models.CharField('CPF', max_length=11)
     endereco = models.CharField('Endereço', max_length=100)
     historico = models.CharField('Histórico', max_length=100)
     SEXO_CHOICES = (
