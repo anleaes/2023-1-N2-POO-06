@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sistema/', include(('sistema.urls', 'sistema'), namespace='sistema')),
     path('paciente/', include('paciente.urls', namespace='paciente')),
+    path('medico/', include('medico.urls', namespace='medico')),
+
 ]
 
