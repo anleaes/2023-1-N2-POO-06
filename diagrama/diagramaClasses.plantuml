@@ -2,12 +2,12 @@
 
 class Paciente {
   - nome: string
-  - cpf: int
-  - idade: int
+  - cpf: char
+  - data_nascimento: date
   - sexo: string
   - endereço: string
   - historico: string
-  + construtor(nome, cpf, idade, sexo, endereço, historico)
+  + construtor(nome, cpf, iddata_nascimentoa, sexo, endereco, historico)
 }
 
 class Medico {
