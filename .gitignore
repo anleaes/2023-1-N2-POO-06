@@ -1,6 +1,9 @@
 /__pycache__/*
-/apps/sistema/__pycache__/*
-/apps/sistema/migrations/*
-/apps/sistema/migrations/*
 /prontuarioapp/__pycache__/*
+/apps/sistema/__pycache__/*
+/apps/paciente/__pycache__/*
+/apps/medico/__pycache__/*
+/apps/sistema/migrations/*
+/apps/paciente/migrations/*
+/apps/medico/migrations/*
 /.vscode/*
