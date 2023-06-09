@@ -5,7 +5,7 @@ class Sistema(models.Model):
     paciente = models.CharField(max_length=100)
     medico = models.CharField(max_length=100)
     prontuario = models.TextField()
-    
+ 
     class Meta:
         verbose_name = 'Sistema'
         verbose_name_plural = 'Sistemas'
