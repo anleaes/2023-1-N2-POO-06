@@ -20,5 +20,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sistema/', include(('sistema.urls', 'sistema'), namespace='sistema')),
     path('paciente/', include('paciente.urls', namespace='paciente')),
+    path('farmacia/', include('farmacia.urls', namespace='farmacia')),
+    path('prontuario/', include('prontuario.urls', namespace='prontuario')),
+    path('medico/', include('medico.urls', namespace='medico')),
+    path('medicamento/', include('medicamento.urls', namespace='medicamento')),
+    path('prescricao/', include('prescricao.urls', namespace='prescricao'))   
 ]
 
