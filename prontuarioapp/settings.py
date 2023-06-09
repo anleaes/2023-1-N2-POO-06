@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'paciente.apps.PacienteConfig',
     'medico.apps.MedicoConfig',
     # 'prontuario.apps.ProntuarioConfig',
-    # 'medicamento.apps.MedicamentoConfig',
+    'medicamento.apps.MedicamentoConfig',
     # 'prescricao.apps.PrescricaoConfig',
     # 'farmacia.apps.FarmaciaConfig'
 ]
