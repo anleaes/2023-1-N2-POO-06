@@ -7,7 +7,7 @@ class Paciente {
   - sexo: string
   - endereço: string
   - historico: string
-  + construtor(nome, cpf, iddata_nascimentoa, sexo, endereco, historico)
+  + construtor(nome, cpf, data_nascimentoa, sexo, endereco, historico)
 }
 
 class Medico {

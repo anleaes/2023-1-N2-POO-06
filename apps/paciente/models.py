@@ -5,12 +5,13 @@ from django.db import models
 class Paciente(models.Model):
     name = models.CharField('Nome', max_length=50)
     cpf = models.CharField('CPF', max_length=11)
+    data_nascimento = models.DateField('Data de Nascimento', null=True)
     endereco = models.CharField('Endereço', max_length=100)
     historico = models.CharField('Histórico', max_length=100)
     SEXO_CHOICES = (
         ('M', 'Masculino'),
         ('F', 'Feminino'),
-        ('O', 'Outroa'),
+        ('O', 'Outros'),
     )
     sexo = models.CharField('Sexo', max_length=1, choices=SEXO_CHOICES)
 
