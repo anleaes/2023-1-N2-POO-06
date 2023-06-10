@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'prontuario.apps.ProntuarioConfig',
     'medicamento.apps.MedicamentoConfig',
     # 'prescricao.apps.PrescricaoConfig',
-    # 'farmacia.apps.FarmaciaConfig'
+    'farmacia.apps.FarmaciaConfig'
 ]
 
 MIDDLEWARE = [
