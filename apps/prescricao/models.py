@@ -5,7 +5,7 @@ from medicamento.models import Medicamento
 
 class Prescricao(models.Model):
     dosagem = models.CharField('Dosagem', max_length=50)
-    medicamento = models.ForeignKey('Medicamento', on_delete=models.CASCADE)
+    medicamento = models.ForeignKey(Medicamento, verbose_name='Medicamento', on_delete=models.CASCADE)
     frequencia = models.CharField('Frequência', max_length=50)
     tratamento = models.CharField('Tratamento', max_length=100)
 
