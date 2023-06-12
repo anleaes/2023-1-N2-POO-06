@@ -6,6 +6,6 @@ from .serializer import PrescricaoSerializer
 
 # Create your views here.
 
-class SistemaViewSet(viewsets.ModelViewSet):
+class PrescricaoViewSet(viewsets.ModelViewSet):
     queryset = Prescricao.objects.all()
     serializer_class = PrescricaoSerializer

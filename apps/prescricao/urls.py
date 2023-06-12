@@ -5,8 +5,8 @@ from rest_framework import routers
 app_name = 'prescricao'
 
 router = routers.DefaultRouter()
-router.register('prescricao', views.SistemaViewSet, basename='prescricao')
+router.register('prescricao', views.PrescricaoViewSet, basename='prescricao')
 
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', include(router.urls))
 ]
