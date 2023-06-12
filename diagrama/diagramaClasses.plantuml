@@ -32,9 +32,9 @@ class Prescricao {
   + construtor(medicamentos, dosagem, frequencia, tratamento)
 }
 
-class aplicacao_medicamento {
-  - precscricao:Prescricao
-  - medicamento: Medico
+class Aplicacao_medicamento {
+  - prescricao: Prescricao
+  - medicamento: Medicamento
 }
 class Prontuario {
   - medico: Medico
@@ -59,6 +59,6 @@ Paciente --* Prontuario
 Medico --* Prontuario
 Prontuario *-- Prescricao
 Farmacia --* Medicamento
-aplicacao_medicamento *-- Prescricao
-aplicacao_medicamento *-- Medicamento
+Aplicacao_medicamento *-- Prescricao
+Aplicacao_medicamento *-- Medicamento
 @enduml
