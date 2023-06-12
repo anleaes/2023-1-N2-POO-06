@@ -1,5 +1,4 @@
-@startuml prontuarioapp
-
+@startuml
 class Paciente {
   - nome: string
   - cpf: char
@@ -11,7 +10,6 @@ class Paciente {
 }
 
 class Medico {
-  - id: int
   - nome: string
   - especialidade: string
   - paciente: Paciente
@@ -39,7 +37,6 @@ class Prontuario {
   - data_criacao: date
   - sintomas: string
   - diagnostico: string
-  - prescricao: Prescricao
   + construtor(paciente, data_criacao, sintomas, diagnostico, prescricao)
 }
 
@@ -60,13 +57,12 @@ class Sistema {
 }
 
 
-Paciente <--> Prontuario
-Medico <--> Prontuario
-Prontuario <-- Prescricao
-Prescricao <-- Medicamento
-Farmacia --> Medicamento
-Sistema <-- Paciente
-Sistema <-- Medico
-Sistema <-- Prontuario
-
+Paciente --* Prontuario
+Medico *-- Prontuario
+Prontuario *-- Prescricao
+Prescricao *-- Medicamento
+Farmacia --* Medicamento
+Sistema *-- Paciente
+Sistema *-- Medico
+Sistema *-- Prontuario
 @enduml
